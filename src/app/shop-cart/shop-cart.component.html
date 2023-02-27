@@ -1,0 +1,23 @@
+<div class="cart-entries-container">
+    
+    <div *ngFor="let entry of ( cartEntries$ | async )" class="cart-entry">
+      <div class="space"></div>
+      <div>
+        <img src="{{ entry.product.image }}">
+      </div>
+      <div class="entry-details">
+        <div class="product-name">
+          {{ entry.product.name }}
+        </div>
+        <div class="count">
+          Count: {{ entry.count }}
+        </div>
+        <div class="detail-button-row">
+          <div class="space"></div>
+         
+        </div>
+      </div>
+      <div class="space"></div>
+    </div>
+  </div>
+
